@@ -1,5 +1,37 @@
 # End-to-End-Machine-Learning-Project-with-MLOPs-Flow
 
+This project integrates comprehensive Machine Learning operations (MLOps) to streamline the development and deployment of ML models. By using this template, you can ensure consistent project configuration, automate data processing, model training, and deployment steps, all controlled through an efficient MLOps workflow.
+
+## Table of Contents
+- Project Setup
+- Workflows
+- How to Run
+- ML Flow Integration
+
+## Project Setup
+Before diving into the workflows, ensure that your development environment is ready.
+
+### Prerequisites
+- Anaconda or Miniconda installed on your machine.
+
+### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/Kanon14/End-to-End-Machine-Learning-Project-with-MLOPs-Flow.git
+cd End-to-End-Machine-Learning-Project-with-MLOPs-Flow
+```
+
+2. Create and activate a Conda environment:
+```bash
+conda create -n mlproj python=3.8 -y
+conda activate mlproj
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 ## Workflows
 1. Update config.yaml
 2. Update schema.yaml
@@ -11,125 +43,21 @@
 8. Update the main.py
 9. Update the dvc.yaml
 
-
-# How to run?
-
-### STEPS:
-
-```bash
-https://github.com/Kanon14/End-to-End-Machine-Learning-Project-with-MLOPs-Flow
-```
-
-### STEP 01: Create a conda environment after opening the repository
-```bash
-conda create -n mlproj python=3.8 -y
-```
-
-```bash
-conda activate mlproj
-```
-
-
-### STEP 02: Install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-### STEP 03: Run the pipeline
+## How to run
+To execute the project's, follow these steps:
+1. Run the pipeline:
 ```bash
 python app.py
 ```
 
-Now,
+2. Access the application:
 ```bash
 open up your local host and port
 ```
 
+## ML Flow Integration
+ML Flow is used to track experiments, manage model versions, and deploy models. Learn more about integrating ML Flow by visiting the [ML Flow documentation](https://mlflow.org/docs/latest/index.html).
 
-
-## ML Flow
-[Documentation](https://mlflow.org/docs/latest/index.html)
-
-
-# AWS-CICD-Deployment-with-Github-Actions
-
-## 1. Login to AWS console.
-
-## 2. Create IAM user for deployment
-
-	#with specific access
-
-	1. EC2 access : It is virtual machine
-
-	2. ECR: Elastic Container registry to save your docker image in aws
-
-
-	#Description: About the deployment
-
-	1. Build docker image of the source code
-
-	2. Push your docker image to ECR
-
-	3. Launch Your EC2 
-
-	4. Pull Your image from ECR in EC2
-
-	5. Lauch your docker image in EC2
-
-	#Policy:
-
-	1. AmazonEC2ContainerRegistryFullAccess
-
-	2. AmazonEC2FullAccess
-
-	
-## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.ap-south-1.amazonaws.com/mlproj
-
-	
-## 4. Create EC2 machine (Ubuntu) 
-
-## 5. Open EC2 and Install docker in EC2 Machine:
-	
-	
-	#optinal
-
-	sudo apt-get update -y
-
-	sudo apt-get upgrade
-	
-	#required
-
-	curl -fsSL https://get.docker.com -o get-docker.sh
-
-	sudo sh get-docker.sh
-
-	sudo usermod -aG docker ubuntu
-
-	newgrp docker
-	
-# 6. Configure EC2 as self-hosted runner:
-    setting>actions>runner>new self hosted runner> choose os> then run command one by one
-
-
-# 7. Setup github secrets:
-
-    AWS_ACCESS_KEY_ID=
-
-    AWS_SECRET_ACCESS_KEY=
-
-    AWS_REGION = us-east-1
-
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
-
-    ECR_REPOSITORY_NAME = simple-app
-
-
-
-
-## About MLflow 
-MLflow
-
- - Its Production Grade
- - Trace all of your expriements
- - Logging & tagging your model
+# Author Information
+Name: [Kanon14](https://github.com/Kanon14)
+Note: This project was created by Kanon14. If you find any issues, have questions, or want to provide feedback, please don't hesitate to reach out. Thank you for exploring this project!

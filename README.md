@@ -59,5 +59,5 @@ open up your local host and port
 ML Flow is used to track experiments, manage model versions, and deploy models. Learn more about integrating ML Flow by visiting the [ML Flow documentation](https://mlflow.org/docs/latest/index.html).
 
 # Author Information
-Name: [Kanon14](https://github.com/Kanon14)
-Note: This project was created by Kanon14. If you find any issues, have questions, or want to provide feedback, please don't hesitate to reach out. Thank you for exploring this project!
+- Name: [Kanon14](https://github.com/Kanon14)
+- Note: This project was created by Kanon14. If you find any issues, have questions, or want to provide feedback, please don't hesitate to reach out. Thank you for exploring this project!
